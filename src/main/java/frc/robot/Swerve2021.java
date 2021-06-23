@@ -28,5 +28,7 @@ public class Swerve2021 extends XeroRobot {
   }
   
   protected void hardwareInit() throws Exception {
+    SwerveDriveRobotSubsystem robot = new SwerveDriveRobotSubsystem(this) ;
+    setRobotSubsystem(robot) ;
   }
 }
