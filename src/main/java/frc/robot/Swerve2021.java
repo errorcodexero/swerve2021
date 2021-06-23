@@ -16,15 +16,24 @@ import org.xero1425.base.controllers.AutoController;
  */
 public class Swerve2021 extends XeroRobot {
   public Swerve2021() {
-    super(0.02) ;
+    super(0.02);
   }
 
   public String getName() {
-    return "swerve2021" ;
+    return "swerve2021";
   }
 
   public AutoController createAutoController() {
-    return null ;
+    AutoController ctrl ;
+
+    try {
+      ctrl = new SwerveDriveRobotAutoController(this) ;
+    }
+    catch(Exception ex) {
+      ctrl = null ;
+    }
+
+    return ctrl ;
   }
   
   protected void hardwareInit() throws Exception {

@@ -9,15 +9,25 @@ import org.xero1425.misc.MissingParameterException;
 public class SwerveDriveRobotAutoController extends AutoController {
 
     private SwerveDriveAutoMode mode_;
+    private SwerveTestAutoMode test_mode_ ;
 
     public SwerveDriveRobotAutoController(XeroRobot robot) throws MissingParameterException, BadParameterTypeException, InvalidActionRequest {
         super(robot, "SwerveDriveAutoController");
 
         mode_ = new SwerveMotorTestAutoMode(this) ;
+        test_mode_ = new SwerveTestAutoMode(this) ;
+
         setAutoMode(mode_) ;
     }  
 
     public void updateAutoMode(int node, String gamedata) {
-        setAutoMode(mode_) ;
+        if (isTestMode()) 
+        {
+            setAutoMode(test_mode_) ;
+        }
+        else
+        {
+            setAutoMode(mode_) ;
+        }
     }    
 }
