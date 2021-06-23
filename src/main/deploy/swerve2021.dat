@@ -1,0 +1,59 @@
+#
+# This file describes the swerve 2021 robot.
+#
+
+#####################################################################################
+#
+# This section defines what subsystems are displaying verbose information.  subsystems
+# can display information on the smart dashboard.  A subsystem can ask to do this only
+# when a subsystem is in verbose mode.  These parameters set a subsystem into verbose
+# mode.
+#
+#####################################################################################
+
+swervedrive:verbose                                                     false
+
+#####################################################################################
+#
+# This section defines what subsystems are displaying message logger information.  Each
+# subsystem can display log messages that get stored in a USB thumb drive in the
+# roborio.  Setting the appropriate item to true causes that subsystem to print messages.
+#
+#####################################################################################
+
+swervedrive:messages                                                    false
+alarms:messages                                                         false
+pathmanager:messages                                                    false
+xerorobot:messages                                                      false
+actions:messages                                                        true
+robot:messages                                                          false
+
+#
+# Hardware
+#
+
+hw:swervedrive:motors:fl:steer:canid                                    1
+hw:swervedrive:motors:fl:steer:type                                     "sparkmax_brushless"
+hw:swervedrive:motors:fl:drive:canid                                    2
+hw:swervedrive:motors:fl:drive:type                                     "talon_fx"
+
+hw:swervedrive:motors:fr:steer:canid                                    3
+hw:swervedrive:motors:fr:steer:type                                     "sparkmax_brushless"
+hw:swervedrive:motors:fr:drive:canid                                    4
+hw:swervedrive:motors:fr:drive:type                                     "talon_fx"
+
+hw:swervedrive:motors:bl:steer:canid                                    5
+hw:swervedrive:motors:bl:steer:type                                     "sparkmax_brushless"
+hw:swervedrive:motors:bl:drive:canid                                    6
+hw:swervedrive:motors:bl:drive:type                                     "talon_fx"
+
+hw:swervedrive:motors:br:steer:canid                                    7
+hw:swervedrive:motors:br:steer:type                                     "sparkmax_brushless"
+hw:swervedrive:motors:br:drive:canid                                    8
+hw:swervedrive:motors:br:drive:type                                     "talon_fx"
+
+#
+# Swerve drive
+#
+swervedrive:width                                                       24
+swervedrive:length                                                      24
