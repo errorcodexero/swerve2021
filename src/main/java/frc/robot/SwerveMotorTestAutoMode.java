@@ -1,6 +1,5 @@
 package frc.robot;
 
-import org.xero1425.base.actions.Action;
 import org.xero1425.base.actions.InvalidActionRequest;
 import org.xero1425.base.controllers.AutoController;
 import org.xero1425.base.swervedrive.SwerveDriveSubsystem;

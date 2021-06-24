@@ -34,9 +34,9 @@ robot:messages                                                          false
 
 hw:gyro                                                                 "navx"
 
-hw:swervedrive:fl:steer:canid                                           1
+hw:swervedrive:fl:steer:canid                                           2
 hw:swervedrive:fl:steer:type                                            "sparkmax_brushless"
-hw:swervedrive:fl:drive:canid                                           2
+hw:swervedrive:fl:drive:canid                                           1
 hw:swervedrive:fl:drive:type                                            "talon_fx"
 hw:swervedrive:fl:encoder:analog                                        0
 hw:swervedrive:fl:encoder:analog:rmin                                   -180.0
@@ -46,9 +46,9 @@ hw:swervedrive:fl:encoder:analog:emax                                   0.0
 hw:swervedrive:fl:encoder:analog:ec                                     0.0
 hw:swervedrive:fl:encoder:analog:rc                                     0.0
 
-hw:swervedrive:fr:steer:canid                                           3
+hw:swervedrive:fr:steer:canid                                           4
 hw:swervedrive:fr:steer:type                                            "sparkmax_brushless"
-hw:swervedrive:fr:drive:canid                                           4
+hw:swervedrive:fr:drive:canid                                           3
 hw:swervedrive:fr:drive:type                                            "talon_fx"
 hw:swervedrive:fr:encoder:analog                                        1
 hw:swervedrive:fr:encoder:analog:rmin                                   -180.0
@@ -58,9 +58,9 @@ hw:swervedrive:fr:encoder:analog:emax                                   0.0
 hw:swervedrive:fr:encoder:analog:ec                                     0.0
 hw:swervedrive:fr:encoder:analog:rc                                     0.0
 
-hw:swervedrive:bl:steer:canid                                           5
+hw:swervedrive:bl:steer:canid                                           6
 hw:swervedrive:bl:steer:type                                            "sparkmax_brushless"
-hw:swervedrive:bl:drive:canid                                           6
+hw:swervedrive:bl:drive:canid                                           5
 hw:swervedrive:bl:drive:type                                            "talon_fx"
 hw:swervedrive:bl:encoder:analog                                        2
 hw:swervedrive:bl:encoder:analog:rmin                                   -180.0
@@ -70,9 +70,9 @@ hw:swervedrive:bl:encoder:analog:emax                                   0.0
 hw:swervedrive:bl:encoder:analog:ec                                     0.0
 hw:swervedrive:bl:encoder:analog:rc                                     0.0
 
-hw:swervedrive:br:steer:canid                                           7
+hw:swervedrive:br:steer:canid                                           8
 hw:swervedrive:br:steer:type                                            "sparkmax_brushless"
-hw:swervedrive:br:drive:canid                                           8
+hw:swervedrive:br:drive:canid                                           7
 hw:swervedrive:br:drive:type                                            "talon_fx"
 hw:swervedrive:br:encoder:analog                                        3
 hw:swervedrive:br:encoder:analog:rmin                                   -180.0
@@ -96,8 +96,8 @@ swervedrive:length                                                      24
 # this active value below is ignored if we are connected to the field.
 #
 auto:testmode:active                                          true
-auto:testmode:which                                           35
+auto:testmode:which                                           7
 auto:testmode:distance                                        1800
-auto:testmode:power                                           5500
-auto:testmode:duration                                        100
+auto:testmode:power                                           0.25
+auto:testmode:duration                                        4
 auto:testmode:name                                           "Slalom_Path"

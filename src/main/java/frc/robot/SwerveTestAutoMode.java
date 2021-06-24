@@ -22,25 +22,25 @@ public class SwerveTestAutoMode extends TestAutoMode {
                 addSubActionPair(swerve, new SwerveSetMotorPowerAction(swerve, SwerveDriveSubsystem.FL, getPower(), 0.0, getDuration()), true) ;
                 break ;
             case 1:
-                addSubActionPair(swerve, new SwerveSetMotorPowerAction(swerve, SwerveDriveSubsystem.FL, 0.0, getPower()), true) ;
+                addSubActionPair(swerve, new SwerveSetMotorPowerAction(swerve, SwerveDriveSubsystem.FL, 0.0, getPower(), getDuration()), true) ;
                 break ;
             case 2:
-                addSubActionPair(swerve, new SwerveSetMotorPowerAction(swerve, SwerveDriveSubsystem.FR, getPower(), 0.0), true) ;
+                addSubActionPair(swerve, new SwerveSetMotorPowerAction(swerve, SwerveDriveSubsystem.FR, getPower(), 0.0, getDuration()), true) ;
                 break ;
             case 3:
-                addSubActionPair(swerve, new SwerveSetMotorPowerAction(swerve, SwerveDriveSubsystem.FR, 0.0, getPower()), true) ;
+                addSubActionPair(swerve, new SwerveSetMotorPowerAction(swerve, SwerveDriveSubsystem.FR, 0.0, getPower(), getDuration()), true) ;
                 break ;
             case 4:
-                addSubActionPair(swerve, new SwerveSetMotorPowerAction(swerve, SwerveDriveSubsystem.BL, getPower(), 0.0), true) ;
+                addSubActionPair(swerve, new SwerveSetMotorPowerAction(swerve, SwerveDriveSubsystem.BL, getPower(), 0.0, getDuration()), true) ;
                 break ;
             case 5:
-                addSubActionPair(swerve, new SwerveSetMotorPowerAction(swerve, SwerveDriveSubsystem.BL, 0.0, getPower()), true) ;
+                addSubActionPair(swerve, new SwerveSetMotorPowerAction(swerve, SwerveDriveSubsystem.BL, 0.0, getPower(), getDuration()), true) ;
                 break ;
             case 6:
-                addSubActionPair(swerve, new SwerveSetMotorPowerAction(swerve, SwerveDriveSubsystem.BR, getPower(), 0.0), true) ;
+                addSubActionPair(swerve, new SwerveSetMotorPowerAction(swerve, SwerveDriveSubsystem.BR, getPower(), 0.0, getDuration()), true) ;
                 break ;
             case 7:
-                addSubActionPair(swerve, new SwerveSetMotorPowerAction(swerve, SwerveDriveSubsystem.BR, 0.0, getPower()), true) ;
+                addSubActionPair(swerve, new SwerveSetMotorPowerAction(swerve, SwerveDriveSubsystem.BR, 0.0, getPower(), getDuration()), true) ;
                 break ;
             case 8:
                 pact.addSubActionPair(swerve, new SwerveSetMotorPowerAction(swerve, SwerveDriveSubsystem.FL, getPower(), getPower()), true) ;
