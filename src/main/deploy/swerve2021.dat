@@ -39,43 +39,65 @@ hw:swervedrive:fl:steer:type                                            "sparkma
 hw:swervedrive:fl:drive:canid                                           2
 hw:swervedrive:fl:drive:type                                            "talon_fx"
 hw:swervedrive:fl:encoder:analog                                        0
-hw:swervedrive:fl:encoder:analog:rmin                                          -180.0
-hw:swervedrive:fl:encoder:analog:rmax                                          180.0
-hw:swervedrive:fl:encoder:analog:emin                                          5.0
-hw:swervedrive:fl:encoder:analog:emax                                          0.0
+hw:swervedrive:fl:encoder:analog:rmin                                   -180.0
+hw:swervedrive:fl:encoder:analog:rmax                                   180.0
+hw:swervedrive:fl:encoder:analog:emin                                   5.0
+hw:swervedrive:fl:encoder:analog:emax                                   0.0
+hw:swervedrive:fl:encoder:analog:ec                                     0.0
+hw:swervedrive:fl:encoder:analog:rc                                     0.0
 
 hw:swervedrive:fr:steer:canid                                           3
 hw:swervedrive:fr:steer:type                                            "sparkmax_brushless"
 hw:swervedrive:fr:drive:canid                                           4
 hw:swervedrive:fr:drive:type                                            "talon_fx"
-hw:swervedrive:fr:encoder:analog                                        0
-hw:swervedrive:fr:encoder:analog:rmin                                          -180.0
-hw:swervedrive:fr:encoder:analog:rmax                                          180.0
-hw:swervedrive:fr:encoder:analog:emin                                          5.0
-hw:swervedrive:fr:encoder:analog:emax                                          0.0
+hw:swervedrive:fr:encoder:analog                                        1
+hw:swervedrive:fr:encoder:analog:rmin                                   -180.0
+hw:swervedrive:fr:encoder:analog:rmax                                   180.0
+hw:swervedrive:fr:encoder:analog:emin                                   5.0
+hw:swervedrive:fr:encoder:analog:emax                                   0.0
+hw:swervedrive:fr:encoder:analog:ec                                     0.0
+hw:swervedrive:fr:encoder:analog:rc                                     0.0
 
 hw:swervedrive:bl:steer:canid                                           5
 hw:swervedrive:bl:steer:type                                            "sparkmax_brushless"
 hw:swervedrive:bl:drive:canid                                           6
 hw:swervedrive:bl:drive:type                                            "talon_fx"
-hw:swervedrive:bl:encoder:analog                                        0
-hw:swervedrive:bl:encoder:analog:rmin                                          -180.0
-hw:swervedrive:bl:encoder:analog:rmax                                          180.0
-hw:swervedrive:bl:encoder:analog:emin                                          5.0
-hw:swervedrive:bl:encoder:analog:emax                                          0.0
+hw:swervedrive:bl:encoder:analog                                        2
+hw:swervedrive:bl:encoder:analog:rmin                                   -180.0
+hw:swervedrive:bl:encoder:analog:rmax                                   180.0
+hw:swervedrive:bl:encoder:analog:emin                                   5.0
+hw:swervedrive:bl:encoder:analog:emax                                   0.0
+hw:swervedrive:bl:encoder:analog:ec                                     0.0
+hw:swervedrive:bl:encoder:analog:rc                                     0.0
 
 hw:swervedrive:br:steer:canid                                           7
 hw:swervedrive:br:steer:type                                            "sparkmax_brushless"
 hw:swervedrive:br:drive:canid                                           8
 hw:swervedrive:br:drive:type                                            "talon_fx"
-hw:swervedrive:br:encoder:analog                                        0
-hw:swervedrive:br:encoder:analog:rmin                                          -180.0
-hw:swervedrive:br:encoder:analog:rmax                                          180.0
-hw:swervedrive:br:encoder:analog:emin                                          5.0
-hw:swervedrive:br:encoder:analog:emax                                          0.0
+hw:swervedrive:br:encoder:analog                                        3
+hw:swervedrive:br:encoder:analog:rmin                                   -180.0
+hw:swervedrive:br:encoder:analog:rmax                                   180.0
+hw:swervedrive:br:encoder:analog:emin                                   5.0
+hw:swervedrive:br:encoder:analog:emax                                   0.0
+hw:swervedrive:br:encoder:analog:ec                                     0.0
+hw:swervedrive:br:encoder:analog:rc                                     0.0
+
+hw:driverstation:hid:driver                                             0
 
 #
 # Swerve drive
 #
 swervedrive:width                                                       24
 swervedrive:length                                                      24
+
+
+#
+# These control test modes for the robot.  They are used by the DroidTestTuneMode automode.  Note
+# this active value below is ignored if we are connected to the field.
+#
+auto:testmode:active                                          true
+auto:testmode:which                                           35
+auto:testmode:distance                                        1800
+auto:testmode:power                                           5500
+auto:testmode:duration                                        100
+auto:testmode:name                                           "Slalom_Path"
