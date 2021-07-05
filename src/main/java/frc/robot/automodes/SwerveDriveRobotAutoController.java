@@ -15,7 +15,12 @@ public class SwerveDriveRobotAutoController extends AutoController {
         super(robot, "SwerveDriveAutoController");
 
         mode_ = new SwerveMotorTestAutoMode(this) ;
-        test_mode_ = new SwerveTestAutoMode(this) ;
+        try {
+            test_mode_ = new SwerveTestAutoMode(this) ;
+        }
+        catch(Exception ex) {
+            test_mode_ = null ;
+        }
 
         setAutoMode(mode_) ;
     }  

@@ -1,19 +1,21 @@
 package frc.robot.automodes;
 
-import frc.robot.SwerveDriveRobotSubsystem ;
-import org.xero1425.base.actions.InvalidActionRequest;
+import frc.robot.SwerveDriveRobotSubsystem;
+
+import org.xero1425.base.actions.DelayAction;
 import org.xero1425.base.actions.ParallelAction;
 import org.xero1425.base.controllers.TestAutoMode;
+import org.xero1425.base.swervedrive.SwerveAngleVelocityAction;
 import org.xero1425.base.swervedrive.SwerveDriveSubsystem;
 import org.xero1425.base.swervedrive.SwerveSetMotorPowerAction;
-import org.xero1425.misc.BadParameterTypeException;
-import org.xero1425.misc.MissingParameterException;
+import org.xero1425.base.swervedrive.SwerveStopAction;
 
 public class SwerveTestAutoMode extends TestAutoMode {
-    public SwerveTestAutoMode(SwerveDriveRobotAutoController ctrl)
-            throws BadParameterTypeException, MissingParameterException, InvalidActionRequest {
+    public SwerveTestAutoMode(SwerveDriveRobotAutoController ctrl) throws Exception {
         super(ctrl, "Swerver-Test-Mode");
 
+        double [] angles = new double[4] ;
+        double [] speeds = new double[4] ;
         SwerveDriveRobotSubsystem robotsys = (SwerveDriveRobotSubsystem) ctrl.getRobot().getRobotSubsystem();
         SwerveDriveSubsystem swerve = (SwerveDriveSubsystem) robotsys.getDB();
         ParallelAction pact = new ParallelAction(ctrl.getRobot().getMessageLogger(), ParallelAction.DonePolicy.All) ;
@@ -50,6 +52,16 @@ public class SwerveTestAutoMode extends TestAutoMode {
                 pact.addSubActionPair(swerve, new SwerveSetMotorPowerAction(swerve, SwerveDriveSubsystem.BR, getPower(), getPower()), true) ;
                 addAction(pact) ;
                 break ;
+            case 9:
+                for(int i = 0 ; i < 4 ; i++) {
+                    angles[i] = 0.0 ;
+                    speeds[i] = getPower() ;
+                }
+
+                addSubActionPair(swerve, new SwerveAngleVelocityAction(swerve, angles, speeds, false), false) ;
+                addAction(new DelayAction(ctrl.getRobot(), getDuration())) ;
+                addSubActionPair(swerve, new SwerveStopAction(swerve), true);
+                break ;                
         }
     }
 }

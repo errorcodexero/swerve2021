@@ -28,7 +28,7 @@ xerorobot:messages                                                      false
 actions:messages                                                        true
 robot:messages                                                          false
 swervedrive:messages                                                    false
-swervedrive_model:messages                                              true
+swervedrive_model:messages                                              false
 
 #
 # Hardware
@@ -47,6 +47,20 @@ hw:swervedrive:fl:encoder:analog:emin                                   5.0
 hw:swervedrive:fl:encoder:analog:emax                                   0.0
 hw:swervedrive:fl:encoder:analog:ec                                     0.0
 hw:swervedrive:fl:encoder:analog:rc                                     0.0
+hw:swervedrive:fl:speed:pid:kp                                          0.0
+hw:swervedrive:fl:speed:pid:ki                                          0.0
+hw:swervedrive:fl:speed:pid:kd                                          0.0
+hw:swervedrive:fl:speed:pid:kf                                          0.0
+hw:swervedrive:fl:speed:pid:min                                         -1.0
+hw:swervedrive:fl:speed:pid:max                                         1.0
+hw:swervedrive:fl:speed:pid:imax                                        0.0
+hw:swervedrive:fl:steer:pid:kp                                          0.0
+hw:swervedrive:fl:steer:pid:ki                                          0.0
+hw:swervedrive:fl:steer:pid:kd                                          0.0
+hw:swervedrive:fl:steer:pid:kf                                          0.0
+hw:swervedrive:fl:steer:pid:min                                         -1.0
+hw:swervedrive:fl:steer:pid:max                                         1.0
+hw:swervedrive:fl:steer:pid:imax                                        0.0
 
 hw:swervedrive:fr:steer:canid                                           4
 hw:swervedrive:fr:steer:type                                            "sparkmax_brushless"
@@ -59,6 +73,20 @@ hw:swervedrive:fr:encoder:analog:emin                                   5.0
 hw:swervedrive:fr:encoder:analog:emax                                   0.0
 hw:swervedrive:fr:encoder:analog:ec                                     0.0
 hw:swervedrive:fr:encoder:analog:rc                                     0.0
+hw:swervedrive:fr:speed:pid:kp                                          0.0
+hw:swervedrive:fr:speed:pid:ki                                          0.0
+hw:swervedrive:fr:speed:pid:kd                                          0.0
+hw:swervedrive:fr:speed:pid:kf                                          0.0
+hw:swervedrive:fr:speed:pid:min                                         -1.0
+hw:swervedrive:fr:speed:pid:max                                         1.0
+hw:swervedrive:fr:speed:pid:imax                                        0.0
+hw:swervedrive:fr:steer:pid:kp                                          0.0
+hw:swervedrive:fr:steer:pid:ki                                          0.0
+hw:swervedrive:fr:steer:pid:kd                                          0.0
+hw:swervedrive:fr:steer:pid:kf                                          0.0
+hw:swervedrive:fr:steer:pid:min                                         -1.0
+hw:swervedrive:fr:steer:pid:max                                         1.0
+hw:swervedrive:fr:steer:pid:imax                                        0.0
 
 hw:swervedrive:bl:steer:canid                                           6
 hw:swervedrive:bl:steer:type                                            "sparkmax_brushless"
@@ -71,6 +99,20 @@ hw:swervedrive:bl:encoder:analog:emin                                   5.0
 hw:swervedrive:bl:encoder:analog:emax                                   0.0
 hw:swervedrive:bl:encoder:analog:ec                                     0.0
 hw:swervedrive:bl:encoder:analog:rc                                     0.0
+hw:swervedrive:bl:speed:pid:kp                                          0.0
+hw:swervedrive:bl:speed:pid:ki                                          0.0
+hw:swervedrive:bl:speed:pid:kd                                          0.0
+hw:swervedrive:bl:speed:pid:kf                                          0.0
+hw:swervedrive:bl:speed:pid:min                                         -1.0
+hw:swervedrive:bl:speed:pid:max                                         1.0
+hw:swervedrive:bl:speed:pid:imax                                        0.0
+hw:swervedrive:bl:steer:pid:kp                                          0.0
+hw:swervedrive:bl:steer:pid:ki                                          0.0
+hw:swervedrive:bl:steer:pid:kd                                          0.0
+hw:swervedrive:bl:steer:pid:kf                                          0.0
+hw:swervedrive:bl:steer:pid:min                                         -1.0
+hw:swervedrive:bl:steer:pid:max                                         1.0
+hw:swervedrive:bl:steer:pid:imax                                        0.0
 
 hw:swervedrive:br:steer:canid                                           8
 hw:swervedrive:br:steer:type                                            "sparkmax_brushless"
@@ -83,6 +125,20 @@ hw:swervedrive:br:encoder:analog:emin                                   5.0
 hw:swervedrive:br:encoder:analog:emax                                   0.0
 hw:swervedrive:br:encoder:analog:ec                                     0.0
 hw:swervedrive:br:encoder:analog:rc                                     0.0
+hw:swervedrive:br:speed:pid:kp                                          0.0
+hw:swervedrive:br:speed:pid:ki                                          0.0
+hw:swervedrive:br:speed:pid:kd                                          0.0
+hw:swervedrive:br:speed:pid:kf                                          0.0
+hw:swervedrive:br:speed:pid:min                                         -1.0
+hw:swervedrive:br:speed:pid:max                                         1.0
+hw:swervedrive:br:speed:pid:imax                                        0.0
+hw:swervedrive:br:steer:pid:kp                                          0.0
+hw:swervedrive:br:steer:pid:ki                                          0.0
+hw:swervedrive:br:steer:pid:kd                                          0.0
+hw:swervedrive:br:steer:pid:kf                                          0.0
+hw:swervedrive:br:steer:pid:min                                         -1.0
+hw:swervedrive:br:steer:pid:max                                         1.0
+hw:swervedrive:br:steer:pid:imax                                        0.0
 
 hw:driverstation:hid:driver                                             0
 
@@ -92,14 +148,18 @@ hw:driverstation:hid:driver                                             0
 swervedrive:width                                                       24
 swervedrive:length                                                      24
 
+#
+# Misc stuff
+#
+plotting:enabled                                                        false
 
 #
 # These control test modes for the robot.  They are used by the DroidTestTuneMode automode.  Note
 # this active value below is ignored if we are connected to the field.
 #
-auto:testmode:active                                          true
-auto:testmode:which                                           8
-auto:testmode:distance                                        1800
-auto:testmode:power                                           0.25
-auto:testmode:duration                                        4
-auto:testmode:name                                           "Slalom_Path"
+auto:testmode:active                                                    true
+auto:testmode:which                                                     9
+auto:testmode:distance                                                  1800
+auto:testmode:power                                                     60
+auto:testmode:duration                                                  4
+auto:testmode:name                                                      "Slalom_Path"
