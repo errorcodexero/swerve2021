@@ -4,8 +4,10 @@
 
 package frc.robot;
 
+import frc.robot.automodes.SwerveDriveRobotAutoController;
 import org.xero1425.base.XeroRobot;
 import org.xero1425.base.controllers.AutoController;
+import org.xero1425.misc.SimArgs;
 
 /**
  * The VM is configured to automatically run this class, and to call the
@@ -15,29 +17,36 @@ import org.xero1425.base.controllers.AutoController;
  * project.
  */
 public class Swerve2021 extends XeroRobot {
-  public Swerve2021() {
-    super(0.02);
-  }
-
-  public String getName() {
-    return "swerve2021";
-  }
-
-  public AutoController createAutoController() {
-    AutoController ctrl ;
-
-    try {
-      ctrl = new SwerveDriveRobotAutoController(this) ;
-    }
-    catch(Exception ex) {
-      ctrl = null ;
+    public Swerve2021() {
+        super(0.02);
     }
 
-    return ctrl ;
-  }
-  
-  protected void hardwareInit() throws Exception {
-    SwerveDriveRobotSubsystem robot = new SwerveDriveRobotSubsystem(this) ;
-    setRobotSubsystem(robot) ;
-  }
+    public String getName() {
+        return "swerve2021";
+    }
+
+    public String getSimulationFileName() {
+        String ret = SimArgs.InputFileName;
+        if (ret != null)
+            return ret;
+
+        return "testmode";
+    }
+
+    public AutoController createAutoController() {
+        AutoController ctrl;
+
+        try {
+            ctrl = new SwerveDriveRobotAutoController(this);
+        } catch (Exception ex) {
+            ctrl = null;
+        }
+
+        return ctrl;
+    }
+
+    protected void hardwareInit() throws Exception {
+        SwerveDriveRobotSubsystem robot = new SwerveDriveRobotSubsystem(this);
+        setRobotSubsystem(robot);
+    }
 }

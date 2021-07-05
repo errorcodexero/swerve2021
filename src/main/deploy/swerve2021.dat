@@ -21,12 +21,14 @@ swervedrive:verbose                                                     false
 #
 #####################################################################################
 
-swervedrive:messages                                                    false
+
 alarms:messages                                                         false
 pathmanager:messages                                                    false
 xerorobot:messages                                                      false
 actions:messages                                                        true
 robot:messages                                                          false
+swervedrive:messages                                                    false
+swervedrive_model:messages                                              true
 
 #
 # Hardware
@@ -96,7 +98,7 @@ swervedrive:length                                                      24
 # this active value below is ignored if we are connected to the field.
 #
 auto:testmode:active                                          true
-auto:testmode:which                                           7
+auto:testmode:which                                           8
 auto:testmode:distance                                        1800
 auto:testmode:power                                           0.25
 auto:testmode:duration                                        4

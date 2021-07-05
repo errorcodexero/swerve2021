@@ -1,5 +1,6 @@
-package frc.robot;
+package frc.robot.automodes;
 
+import frc.robot.SwerveDriveRobotSubsystem ;
 import org.xero1425.base.actions.InvalidActionRequest;
 import org.xero1425.base.actions.ParallelAction;
 import org.xero1425.base.controllers.TestAutoMode;

@@ -1,0 +1,56 @@
+{
+    "models" :
+    [
+        {
+            "model" : "navx",
+            "instance" : "1"
+        },
+        {
+            "model" : "fms",
+            "instance" : "1",
+            "props" : {
+                "start" : 1.0,
+                "autonomous" : 15.0,
+                "between" : 2.0,
+                "teleop" : 135.0,
+                "create_early" : true                
+            }            
+        },
+        {
+            "model" : "drivergamepad",
+            "instance" : "1",
+            "props" : {
+                "index" : 0,
+                "axes" : 6,
+                "buttons" : 10,
+                "povs" : 1,
+                "create_early" : true                
+            }
+        },
+        {
+            "model" : "swervedrive",
+            "instance" : "1",
+            "props" :
+            {
+                "navx:model" : "navx",
+                "navx:instance" : "1",
+                "flsteer:motor:index" : 2,
+                "flsteer:motor:type" : "sparkmax-brushless",
+                "fldrive:motor:index" : 1,
+                "fldrive:motor:type" : "talonfx",
+                "frsteer:motor:index" : 4,
+                "frsteer:motor:type" : "sparkmax-brushless",
+                "frdrive:motor:index" : 3,
+                "frdrive:motor:type" : "talonfx",
+                "blsteer:motor:index" : 6,
+                "blsteer:motor:type" : "sparkmax-brushless",
+                "bldrive:motor:index" : 5,
+                "bldrive:motor:type" : "talonfx",
+                "brsteer:motor:index" : 8,
+                "brsteer:motor:type" : "sparkmax-brushless",
+                "brdrive:motor:index" : 7,
+                "brdrive:motor:type" : "talonfx"                                                
+            }
+        }        
+    ]
+}

@@ -1,4 +1,4 @@
-package frc.robot;
+package frc.robot.automodes;
 
 import org.xero1425.base.actions.InvalidActionRequest;
 import org.xero1425.base.controllers.AutoController;

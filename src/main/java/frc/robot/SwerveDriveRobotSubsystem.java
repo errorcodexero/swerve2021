@@ -10,7 +10,7 @@ public class SwerveDriveRobotSubsystem extends RobotSubsystem {
     public SwerveDriveRobotSubsystem(XeroRobot robot) throws Exception {
         super(robot, "SwerveRobotSubsystem") ;
 
-        DriveBaseSubsystem db = new SwerveDriveSubsystem(this, "ServerDriveSubsystem", "hw:swervedrive") ;
+        DriveBaseSubsystem db = new SwerveDriveSubsystem(this, "swervedrive", "hw:swervedrive") ;
         addChild(db) ;
         addChild(new OISubsystem(this, "swerveoi", db)) ;
     }
