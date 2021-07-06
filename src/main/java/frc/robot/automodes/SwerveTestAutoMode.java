@@ -61,7 +61,18 @@ public class SwerveTestAutoMode extends TestAutoMode {
                 addSubActionPair(swerve, new SwerveAngleVelocityAction(swerve, angles, speeds, false), false) ;
                 addAction(new DelayAction(ctrl.getRobot(), getDuration())) ;
                 addSubActionPair(swerve, new SwerveStopAction(swerve), true);
-                break ;                
+                break ;
+                
+            case 10:
+                for(int i = 0 ; i < 4 ; i++) {
+                    angles[i] = getPower() ;
+                    speeds[i] = 0.0 ;
+                }
+
+                addSubActionPair(swerve, new SwerveAngleVelocityAction(swerve, angles, speeds, false), false) ;
+                addAction(new DelayAction(ctrl.getRobot(), getDuration())) ;
+                addSubActionPair(swerve, new SwerveStopAction(swerve), true);
+                break ;               
         }
     }
 }

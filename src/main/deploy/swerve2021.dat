@@ -27,7 +27,7 @@ pathmanager:messages                                                    false
 xerorobot:messages                                                      false
 actions:messages                                                        true
 robot:messages                                                          false
-swervedrive:messages                                                    false
+swervedrive:messages                                                    true
 swervedrive_model:messages                                              false
 
 #
@@ -54,7 +54,7 @@ hw:swervedrive:fl:speed:pid:kf                                          0.0
 hw:swervedrive:fl:speed:pid:min                                         -1.0
 hw:swervedrive:fl:speed:pid:max                                         1.0
 hw:swervedrive:fl:speed:pid:imax                                        0.0
-hw:swervedrive:fl:steer:pid:kp                                          0.0
+hw:swervedrive:fl:steer:pid:kp                                          0.0027777777777778
 hw:swervedrive:fl:steer:pid:ki                                          0.0
 hw:swervedrive:fl:steer:pid:kd                                          0.0
 hw:swervedrive:fl:steer:pid:kf                                          0.0
@@ -80,7 +80,7 @@ hw:swervedrive:fr:speed:pid:kf                                          0.0
 hw:swervedrive:fr:speed:pid:min                                         -1.0
 hw:swervedrive:fr:speed:pid:max                                         1.0
 hw:swervedrive:fr:speed:pid:imax                                        0.0
-hw:swervedrive:fr:steer:pid:kp                                          0.0
+hw:swervedrive:fr:steer:pid:kp                                          0.0027777777777778
 hw:swervedrive:fr:steer:pid:ki                                          0.0
 hw:swervedrive:fr:steer:pid:kd                                          0.0
 hw:swervedrive:fr:steer:pid:kf                                          0.0
@@ -99,7 +99,7 @@ hw:swervedrive:bl:encoder:analog:emin                                   5.0
 hw:swervedrive:bl:encoder:analog:emax                                   0.0
 hw:swervedrive:bl:encoder:analog:ec                                     0.0
 hw:swervedrive:bl:encoder:analog:rc                                     0.0
-hw:swervedrive:bl:speed:pid:kp                                          0.0
+hw:swervedrive:bl:speed:pid:kp                                          0.0027777777777778
 hw:swervedrive:bl:speed:pid:ki                                          0.0
 hw:swervedrive:bl:speed:pid:kd                                          0.0
 hw:swervedrive:bl:speed:pid:kf                                          0.0
@@ -132,7 +132,7 @@ hw:swervedrive:br:speed:pid:kf                                          0.0
 hw:swervedrive:br:speed:pid:min                                         -1.0
 hw:swervedrive:br:speed:pid:max                                         1.0
 hw:swervedrive:br:speed:pid:imax                                        0.0
-hw:swervedrive:br:steer:pid:kp                                          0.0
+hw:swervedrive:br:steer:pid:kp                                          0.0027777777777778
 hw:swervedrive:br:steer:pid:ki                                          0.0
 hw:swervedrive:br:steer:pid:kd                                          0.0
 hw:swervedrive:br:steer:pid:kf                                          0.0
@@ -158,7 +158,7 @@ plotting:enabled                                                        false
 # this active value below is ignored if we are connected to the field.
 #
 auto:testmode:active                                                    true
-auto:testmode:which                                                     9
+auto:testmode:which                                                     10
 auto:testmode:distance                                                  1800
 auto:testmode:power                                                     60
 auto:testmode:duration                                                  4
