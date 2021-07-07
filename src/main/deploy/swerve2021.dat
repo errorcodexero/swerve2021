@@ -27,8 +27,8 @@ pathmanager:messages                                                    false
 xerorobot:messages                                                      false
 actions:messages                                                        true
 robot:messages                                                          false
-swervedrive:messages                                                    true
-swervedrive_model:messages                                              true
+swervedrive:messages                                                    false
+swervedrive_model:messages                                              false
 
 #
 # Hardware
