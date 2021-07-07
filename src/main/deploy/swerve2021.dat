@@ -149,6 +149,14 @@ swervedrive:width                                                       24
 swervedrive:length                                                      24
 
 #
+# OI
+#
+driver:angle:nominal                                                    90
+driver:angle:maximum                                                    180
+driver:position:nominal                                                 48
+driver:position:maximum                                                 96
+
+#
 # Misc stuff
 #
 plotting:enabled                                                        false
