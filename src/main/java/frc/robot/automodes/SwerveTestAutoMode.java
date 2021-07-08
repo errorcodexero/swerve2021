@@ -5,6 +5,7 @@ import frc.robot.SwerveDriveRobotSubsystem;
 import org.xero1425.base.actions.DelayAction;
 import org.xero1425.base.actions.ParallelAction;
 import org.xero1425.base.controllers.TestAutoMode;
+import org.xero1425.base.swervedrive.SwerveAnglePowerAction;
 import org.xero1425.base.swervedrive.SwerveAngleVelocityAction;
 import org.xero1425.base.swervedrive.SwerveDriveSubsystem;
 import org.xero1425.base.swervedrive.SwerveSetMotorPowerAction;
@@ -53,6 +54,16 @@ public class SwerveTestAutoMode extends TestAutoMode {
                 addAction(pact) ;
                 break ;
             case 9:
+                addSubActionPair(swerve, new SwerveSetMotorPowerAction(swerve, SwerveDriveSubsystem.FL, getPower(), 0, getDuration()), true);
+                addSubActionPair(swerve, new SwerveSetMotorPowerAction(swerve, SwerveDriveSubsystem.FL, 0, getPower(), getDuration()), true);
+                addSubActionPair(swerve, new SwerveSetMotorPowerAction(swerve, SwerveDriveSubsystem.FR, getPower(), 0, getDuration()), true);
+                addSubActionPair(swerve, new SwerveSetMotorPowerAction(swerve, SwerveDriveSubsystem.FR, 0, getPower(), getDuration()), true);
+                addSubActionPair(swerve, new SwerveSetMotorPowerAction(swerve, SwerveDriveSubsystem.BL, getPower(), 0, getDuration()), true);
+                addSubActionPair(swerve, new SwerveSetMotorPowerAction(swerve, SwerveDriveSubsystem.BL, 0, getPower(), getDuration()), true);
+                addSubActionPair(swerve, new SwerveSetMotorPowerAction(swerve, SwerveDriveSubsystem.BR, getPower(), 0, getDuration()), true);
+                addSubActionPair(swerve, new SwerveSetMotorPowerAction(swerve, SwerveDriveSubsystem.BR, 0, getPower(), getDuration()), true);
+                break ;
+            case 10:
                 for(int i = 0 ; i < 4 ; i++) {
                     angles[i] = 0.0 ;
                     speeds[i] = getPower() ;
@@ -63,16 +74,33 @@ public class SwerveTestAutoMode extends TestAutoMode {
                 addSubActionPair(swerve, new SwerveStopAction(swerve), true);
                 break ;
                 
-            case 10:
+            case 11:
                 for(int i = 0 ; i < 4 ; i++) {
                     angles[i] = getPower() ;
                     speeds[i] = 0.0 ;
                 }
+                addSubActionPair(swerve, new SwerveAngleVelocityAction(swerve, angles, speeds, false), false) ;
+                
+                addAction(new DelayAction(ctrl.getRobot(), getDuration())) ;
+
+                for(int i = 0 ; i < 4 ; i++) {
+                    angles[i] = 0.0 ;
+                    speeds[i] = 0.0 ;
+                }
 
                 addSubActionPair(swerve, new SwerveAngleVelocityAction(swerve, angles, speeds, false), false) ;
-                addAction(new DelayAction(ctrl.getRobot(), getDuration())) ;
-                addSubActionPair(swerve, new SwerveStopAction(swerve), true);
-                break ;               
+                break ;      
+            
+            case 12:
+                addSubActionPair(swerve, new SwerveAnglePowerAction(swerve, 0, getPower(), getDuration()), true);
+                break ;
+
+            case 13:
+                addSubActionPair(swerve, new SwerveAnglePowerAction(swerve, 45, 0.2, 2), true);
+                addSubActionPair(swerve, new SwerveAnglePowerAction(swerve, -45, 0.2, 2), true);
+                addSubActionPair(swerve, new SwerveAnglePowerAction(swerve, 45, -0.2, 2), true);
+                addSubActionPair(swerve, new SwerveAnglePowerAction(swerve, -45, -0.2, 2), true);
+                break ;    
         }
     }
 }
