@@ -27,9 +27,9 @@ pathmanager:messages                                                    false
 xerorobot:messages                                                      false
 actions:messages                                                        true
 robot:messages                                                          false
-swervedrive:messages                                                    false
+swervedrive:messages                                                    true
 swervedrive_model:messages                                              false
-
+swerve_module:messages                                                  false
 #
 # Hardware
 #
@@ -148,6 +148,7 @@ hw:driverstation:hid:driver                                             0
 swervedrive:width                                                       24
 swervedrive:length                                                      24
 swervedrive:linear:samples                                              2
+swervedrive:inches_per_tick                                             0.0002
 
 #
 # OI
