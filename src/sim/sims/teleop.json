@@ -10,7 +10,6 @@
                     "instance" : "1",
                     "values" : 
                     {
-                        "comment" : "automode must be set to the correct testmode in droid param file",
                         "start" : 1.0,
                         "autonomous" : 0.0,
                         "between" : 0.0,
@@ -28,6 +27,21 @@
                         "angle" : 0.0
                     }
                 }           
+            ]
+        },
+        {
+            "time" : 1.0,
+            "events" : 
+            [
+                {
+                    "model" : "drivergamepad",
+                    "instance" : "1",
+                    "values" :
+                    {
+                        "comment" : "move forward - push left Y axis forward to its maximum position",
+                        "axis1" : 1.0
+                    }
+                }
             ]
         }
     ]

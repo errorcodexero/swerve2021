@@ -148,6 +148,7 @@ hw:driverstation:hid:driver                                             0
 swervedrive:width                                                       24
 swervedrive:length                                                      24
 swervedrive:linear:samples                                              2
+swervedrive:angularsamples                                              2
 swervedrive:inches_per_tick                                             0.0002
 
 #
