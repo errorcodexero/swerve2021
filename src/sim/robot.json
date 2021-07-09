@@ -47,7 +47,7 @@
                 "flsteer:rc" : 0,
                 "fldrive:motor:index" : 1,
                 "fldrive:motor:type" : "talonfx",
-                "fldrive:kv" : 120.0,
+                "fldrive:kv" : 0.0083333333333333,
                 "fldrive:ticks_per_inch" : 0.00244140625,
 
                 "frsteer:motor:index" : 4,
@@ -62,7 +62,7 @@
                 "frsteer:rc" : 0,
                 "frdrive:motor:index" : 3,
                 "frdrive:motor:type" : "talonfx",
-                "frdrive:kv" : 120.0,
+                "frdrive:kv" : 0.0083333333333333,
                 "frdrive:ticks_per_inch" : 0.00244140625,
 
                 "blsteer:motor:index" : 6,
@@ -77,7 +77,7 @@
                 "blsteer:rc" : 0,
                 "bldrive:motor:index" : 5,
                 "bldrive:motor:type" : "talonfx",
-                "bldrive:kv" : 120.0,
+                "bldrive:kv" : 0.0083333333333333,
                 "bldrive:ticks_per_inch" : 0.00244140625,
 
                 "brsteer:motor:index" : 8,
@@ -92,7 +92,7 @@
                 "brsteer:rc" : 0,
                 "brdrive:motor:index" : 7,
                 "brdrive:motor:type" : "talonfx",
-                "brdrive:kv" : 120.0,
+                "brdrive:kv" : 0.0083333333333333,
                 "brdrive:ticks_per_inch" : 0.00244140625
             }
         }        

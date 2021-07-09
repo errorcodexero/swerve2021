@@ -30,10 +30,10 @@ robot:messages                                                          false
 swervedrive:messages                                                    true
 swervedrive_model:messages                                              false
 swerve_module:messages                                                  false
+
 #
 # Hardware
 #
-
 hw:gyro                                                                 "navx"
 
 hw:swervedrive:fl:steer:canid                                           2
@@ -149,7 +149,7 @@ swervedrive:width                                                       24
 swervedrive:length                                                      24
 swervedrive:linear:samples                                              2
 swervedrive:angularsamples                                              2
-swervedrive:inches_per_tick                                             0.0002
+swervedrive:inches_per_tick                                             0.000613592
 
 #
 # OI
