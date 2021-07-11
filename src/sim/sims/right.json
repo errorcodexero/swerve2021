@@ -13,7 +13,7 @@
                         "start" : 1.0,
                         "autonomous" : 0.0,
                         "between" : 0.0,
-                        "teleop" : 240.0,
+                        "teleop" : 10.0,
                         "fms" : false
                     }
                 },
@@ -38,8 +38,11 @@
                     "instance" : "1",
                     "values" :
                     {
-                        "comment" : "move forward - push left Y axis forward to its maximum position",
-                        "axis1" : 1.0
+                        "comment" : "move right - left X = -1, left Y = 0, right X = 0, right Y = 0",
+                        "axis0" : -1.0,
+                        "axis1" : 0.0,
+                        "axis4" : 0.0,
+                        "axis5" : 0.0
                     }
                 }
             ]
