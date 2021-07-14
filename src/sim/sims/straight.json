@@ -38,7 +38,7 @@
                     "instance" : "1",
                     "values" :
                     {
-                        "comment" : "move forward - left X = 0, left Y = 1, right X = 0, right Y = 0",
+                        "comment" : "move forward",
                         "axis0" : 0.0,
                         "axis1" : -1.0,
                         "axis4" : 0.0,
@@ -46,6 +46,24 @@
                     }
                 }
             ]
-        }
+        },
+        {
+            "time" : 8.0,
+            "events" : 
+            [
+                {
+                    "model" : "drivergamepad",
+                    "instance" : "1",
+                    "values" :
+                    {
+                        "comment" : "stop",
+                        "axis0" : 0.0,
+                        "axis1" : 0.0,
+                        "axis4" : 0.0,
+                        "axis5" : 0.0
+                    }
+                }
+            ]
+        }        
     ]
 }
