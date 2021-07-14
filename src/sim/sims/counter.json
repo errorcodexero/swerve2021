@@ -25,10 +25,10 @@
                         "xpos" : 0.0,
                         "ypos" : 0.0,
                         "angle" : 0.0, 
-                        "fl:angle" : -90.0,
-                        "fr:angle" : -90.0,
-                        "bl:angle" : -90.0,
-                        "br:angle" : -90.0  
+                        "fl:angle" : 0.0,
+                        "fr:angle" : 0.0,
+                        "bl:angle" : 0.0,
+                        "br:angle" : 0.0  
                     }
                 }           
             ]
@@ -45,14 +45,14 @@
                         "comment" : "rotate clockwise - left X = 0, left Y = 0, right X = 1, right Y = 0",
                         "axis0" : 0.0,
                         "axis1" : 0.0,
-                        "axis4" : 1.0,
+                        "axis4" : -1.0,
                         "axis5" : 0.0
                     }
                 }
             ]
         },
         {
-            "time" : 3.0,
+            "time" : 8.0,
             "events" : 
             [
                 {
@@ -63,7 +63,7 @@
                         "comment" : "rotate counter - left X = 0, left Y = 0, right X = -1, right Y = 0",
                         "axis0" : 0.0,
                         "axis1" : 0.0,
-                        "axis4" : -1.0,
+                        "axis4" : 0.0,
                         "axis5" : 0.0
                     }
                 }
