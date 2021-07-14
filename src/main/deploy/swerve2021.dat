@@ -45,12 +45,12 @@ hw:swervedrive:fl:encoder:analog:rmin                                   -180.0
 hw:swervedrive:fl:encoder:analog:rmax                                   180.0
 hw:swervedrive:fl:encoder:analog:emin                                   5.0
 hw:swervedrive:fl:encoder:analog:emax                                   0.0
-hw:swervedrive:fl:encoder:analog:ec                                     4.666
+hw:swervedrive:fl:encoder:analog:ec                                     4.620361
 hw:swervedrive:fl:encoder:analog:rc                                     0.0
 hw:swervedrive:fl:speed:pid:kp                                          0.001
 hw:swervedrive:fl:speed:pid:ki                                          0.0
 hw:swervedrive:fl:speed:pid:kd                                          0.0
-hw:swervedrive:fl:speed:pid:kf                                          0.0083333333333333
+hw:swervedrive:fl:speed:pid:kf                                          0.006479966
 hw:swervedrive:fl:speed:pid:min                                         -1.0
 hw:swervedrive:fl:speed:pid:max                                         1.0
 hw:swervedrive:fl:speed:pid:imax                                        0.0
@@ -71,12 +71,12 @@ hw:swervedrive:fr:encoder:analog:rmin                                   -180.0
 hw:swervedrive:fr:encoder:analog:rmax                                   180.0
 hw:swervedrive:fr:encoder:analog:emin                                   5.0
 hw:swervedrive:fr:encoder:analog:emax                                   0.0
-hw:swervedrive:fr:encoder:analog:ec                                     4.195
+hw:swervedrive:fr:encoder:analog:ec                                     4.150390
 hw:swervedrive:fr:encoder:analog:rc                                     0.0
 hw:swervedrive:fr:speed:pid:kp                                          0.001
 hw:swervedrive:fr:speed:pid:ki                                          0.0
 hw:swervedrive:fr:speed:pid:kd                                          0.0
-hw:swervedrive:fr:speed:pid:kf                                          0.0083333333333333
+hw:swervedrive:fr:speed:pid:kf                                          0.006479966
 hw:swervedrive:fr:speed:pid:min                                         -1.0
 hw:swervedrive:fr:speed:pid:max                                         1.0
 hw:swervedrive:fr:speed:pid:imax                                        0.0
@@ -97,12 +97,12 @@ hw:swervedrive:bl:encoder:analog:rmin                                   -180.0
 hw:swervedrive:bl:encoder:analog:rmax                                   180.0
 hw:swervedrive:bl:encoder:analog:emin                                   5.0
 hw:swervedrive:bl:encoder:analog:emax                                   0.0
-hw:swervedrive:bl:encoder:analog:ec                                     0.974
+hw:swervedrive:bl:encoder:analog:ec                                     0.969238
 hw:swervedrive:bl:encoder:analog:rc                                     0.0
 hw:swervedrive:bl:speed:pid:kp                                          0.001
 hw:swervedrive:bl:speed:pid:ki                                          0.0
 hw:swervedrive:bl:speed:pid:kd                                          0.0
-hw:swervedrive:bl:speed:pid:kf                                          0.0083333333333333
+hw:swervedrive:bl:speed:pid:kf                                          0.006479966
 hw:swervedrive:bl:speed:pid:min                                         -1.0
 hw:swervedrive:bl:speed:pid:max                                         1.0
 hw:swervedrive:bl:speed:pid:imax                                        0.0
@@ -123,12 +123,12 @@ hw:swervedrive:br:encoder:analog:rmin                                   -180.0
 hw:swervedrive:br:encoder:analog:rmax                                   180.0
 hw:swervedrive:br:encoder:analog:emin                                   5.0
 hw:swervedrive:br:encoder:analog:emax                                   0.0
-hw:swervedrive:br:encoder:analog:ec                                     3.509
+hw:swervedrive:br:encoder:analog:ec                                     3.494873
 hw:swervedrive:br:encoder:analog:rc                                     0.0
 hw:swervedrive:br:speed:pid:kp                                          0.001
 hw:swervedrive:br:speed:pid:ki                                          0.0
 hw:swervedrive:br:speed:pid:kd                                          0.0
-hw:swervedrive:br:speed:pid:kf                                          0.0083333333333333
+hw:swervedrive:br:speed:pid:kf                                          0.006479966
 hw:swervedrive:br:speed:pid:min                                         -1.0
 hw:swervedrive:br:speed:pid:max                                         1.0
 hw:swervedrive:br:speed:pid:imax                                        0.0
@@ -149,28 +149,28 @@ swervedrive:width                                                       24
 swervedrive:length                                                      24
 swervedrive:linear:samples                                              2
 swervedrive:angularsamples                                              2
-swervedrive:inches_per_tick                                             0.000613592
+swervedrive:inches_per_tick                                             0.000739
 
 #
 # OI
 #
-driver:angle:nominal                                                    90
-driver:angle:maximum                                                    180
-driver:position:nominal                                                 48
-driver:position:maximum                                                 96
+driver:angle:nominal                                                    180
+driver:angle:maximum                                                    360
+driver:position:nominal                                                 96
+driver:position:maximum                                                 154
 
 #
 # Misc stuff
 #
-plotting:enabled                                                        false
+plotting:enabled                                                        true
 
 #
 # These control test modes for the robot.  They are used by the DroidTestTuneMode automode.  Note
 # this active value below is ignored if we are connected to the field.
 #
 auto:testmode:active                                                    true
-auto:testmode:which                                                     11
+auto:testmode:which                                                     12
 auto:testmode:distance                                                  1800
-auto:testmode:power                                                     135
-auto:testmode:duration                                                  3
+auto:testmode:power                                                     0.9
+auto:testmode:duration                                                  1.75
 auto:testmode:name                                                      "Slalom_Path"

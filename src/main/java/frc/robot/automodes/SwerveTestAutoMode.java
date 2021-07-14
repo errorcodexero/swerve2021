@@ -63,6 +63,7 @@ public class SwerveTestAutoMode extends TestAutoMode {
                 addSubActionPair(swerve, new SwerveSetMotorPowerAction(swerve, SwerveDriveSubsystem.BR, getPower(), 0, getDuration()), true);
                 addSubActionPair(swerve, new SwerveSetMotorPowerAction(swerve, SwerveDriveSubsystem.BR, 0, getPower(), getDuration()), true);
                 break ;
+
             case 10:
                 for(int i = 0 ; i < 4 ; i++) {
                     angles[i] = 0.0 ;
