@@ -154,10 +154,12 @@ swervedrive:inches_per_tick                                             0.000739
 #
 # OI
 #
-driver:angle:nominal                                                    180
-driver:angle:maximum                                                    360
-driver:position:nominal                                                 96
+driver:angle:maximum                                                    735
 driver:position:maximum                                                 154
+driver:position:x:deadband                                              0.1
+driver:position:y:deadband                                              0.1
+driver:rotate:deadband                                                  0.1
+driver:axis:power                                                       1.5
 
 #
 # Misc stuff
