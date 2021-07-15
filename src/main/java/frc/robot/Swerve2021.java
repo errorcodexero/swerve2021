@@ -30,7 +30,7 @@ public class Swerve2021 extends XeroRobot {
         if (ret != null)
             return ret;
 
-        return "counter";
+        return "strrot";
     }
 
     public AutoController createAutoController() {
