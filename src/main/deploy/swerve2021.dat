@@ -47,7 +47,7 @@ hw:swervedrive:fl:encoder:analog:emin                                   5.0
 hw:swervedrive:fl:encoder:analog:emax                                   0.0
 hw:swervedrive:fl:encoder:analog:ec                                     4.620361
 hw:swervedrive:fl:encoder:analog:rc                                     0.0
-hw:swervedrive:fl:speed:pid:kp                                          0.001
+hw:swervedrive:fl:speed:pid:kp                                          0.002
 hw:swervedrive:fl:speed:pid:ki                                          0.0
 hw:swervedrive:fl:speed:pid:kd                                          0.0
 hw:swervedrive:fl:speed:pid:kf                                          0.006479966
@@ -73,7 +73,7 @@ hw:swervedrive:fr:encoder:analog:emin                                   5.0
 hw:swervedrive:fr:encoder:analog:emax                                   0.0
 hw:swervedrive:fr:encoder:analog:ec                                     4.150390
 hw:swervedrive:fr:encoder:analog:rc                                     0.0
-hw:swervedrive:fr:speed:pid:kp                                          0.001
+hw:swervedrive:fr:speed:pid:kp                                          0.002
 hw:swervedrive:fr:speed:pid:ki                                          0.0
 hw:swervedrive:fr:speed:pid:kd                                          0.0
 hw:swervedrive:fr:speed:pid:kf                                          0.006479966
@@ -99,7 +99,7 @@ hw:swervedrive:bl:encoder:analog:emin                                   5.0
 hw:swervedrive:bl:encoder:analog:emax                                   0.0
 hw:swervedrive:bl:encoder:analog:ec                                     0.969238
 hw:swervedrive:bl:encoder:analog:rc                                     0.0
-hw:swervedrive:bl:speed:pid:kp                                          0.001
+hw:swervedrive:bl:speed:pid:kp                                          0.002
 hw:swervedrive:bl:speed:pid:ki                                          0.0
 hw:swervedrive:bl:speed:pid:kd                                          0.0
 hw:swervedrive:bl:speed:pid:kf                                          0.006479966
@@ -125,7 +125,7 @@ hw:swervedrive:br:encoder:analog:emin                                   5.0
 hw:swervedrive:br:encoder:analog:emax                                   0.0
 hw:swervedrive:br:encoder:analog:ec                                     3.494873
 hw:swervedrive:br:encoder:analog:rc                                     0.0
-hw:swervedrive:br:speed:pid:kp                                          0.001
+hw:swervedrive:br:speed:pid:kp                                          0.002
 hw:swervedrive:br:speed:pid:ki                                          0.0
 hw:swervedrive:br:speed:pid:kd                                          0.0
 hw:swervedrive:br:speed:pid:kf                                          0.006479966
@@ -145,8 +145,8 @@ hw:driverstation:hid:driver                                             0
 #
 # Swerve drive
 #
-swervedrive:width                                                       24
-swervedrive:length                                                      24
+swervedrive:width                                                       23
+swervedrive:length                                                      23
 swervedrive:linear:samples                                              2
 swervedrive:angularsamples                                              2
 swervedrive:inches_per_tick                                             0.000739
