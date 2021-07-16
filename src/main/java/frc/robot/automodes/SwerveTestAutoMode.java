@@ -141,7 +141,7 @@ public class SwerveTestAutoMode extends TestAutoMode {
                 break;
 
             case 14:
-                addSubActionPair(swerve, new SwerveDriveDirectionRotateAction(swerve, 12, 0, 36), true);
+                addSubActionPair(swerve, new SwerveDriveDirectionRotateAction(swerve, 12, 0, 36, getDuration()), true);
                 break ;
         }
     }
