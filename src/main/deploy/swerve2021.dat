@@ -28,7 +28,7 @@ xerorobot:messages                                                      false
 actions:messages                                                        true
 robot:messages                                                          false
 swervedrive:messages                                                    true
-swerve_module:messages                                                  true
+swerve_module:messages                                                  false
 swervedrive_model:messages                                              false
 
 #
@@ -47,10 +47,10 @@ hw:swervedrive:fl:encoder:analog:emin                                   5.0
 hw:swervedrive:fl:encoder:analog:emax                                   0.0
 hw:swervedrive:fl:encoder:analog:ec                                     4.620361
 hw:swervedrive:fl:encoder:analog:rc                                     0.0
-hw:swervedrive:fl:speed:pid:kp                                          0.002
+hw:swervedrive:fl:speed:pid:kp                                          0.0
 hw:swervedrive:fl:speed:pid:ki                                          0.0
 hw:swervedrive:fl:speed:pid:kd                                          0.0
-hw:swervedrive:fl:speed:pid:kf                                          0.006479966
+hw:swervedrive:fl:speed:pid:kf                                          0.006921906
 hw:swervedrive:fl:speed:pid:min                                         -1.0
 hw:swervedrive:fl:speed:pid:max                                         1.0
 hw:swervedrive:fl:speed:pid:imax                                        0.0
@@ -73,10 +73,10 @@ hw:swervedrive:fr:encoder:analog:emin                                   5.0
 hw:swervedrive:fr:encoder:analog:emax                                   0.0
 hw:swervedrive:fr:encoder:analog:ec                                     4.150390
 hw:swervedrive:fr:encoder:analog:rc                                     0.0
-hw:swervedrive:fr:speed:pid:kp                                          0.002
+hw:swervedrive:fr:speed:pid:kp                                          0.0
 hw:swervedrive:fr:speed:pid:ki                                          0.0
 hw:swervedrive:fr:speed:pid:kd                                          0.0
-hw:swervedrive:fr:speed:pid:kf                                          0.006479966
+hw:swervedrive:fr:speed:pid:kf                                          0.006921906
 hw:swervedrive:fr:speed:pid:min                                         -1.0
 hw:swervedrive:fr:speed:pid:max                                         1.0
 hw:swervedrive:fr:speed:pid:imax                                        0.0
@@ -99,10 +99,10 @@ hw:swervedrive:bl:encoder:analog:emin                                   5.0
 hw:swervedrive:bl:encoder:analog:emax                                   0.0
 hw:swervedrive:bl:encoder:analog:ec                                     0.969238
 hw:swervedrive:bl:encoder:analog:rc                                     0.0
-hw:swervedrive:bl:speed:pid:kp                                          0.002
+hw:swervedrive:bl:speed:pid:kp                                          0.0
 hw:swervedrive:bl:speed:pid:ki                                          0.0
 hw:swervedrive:bl:speed:pid:kd                                          0.0
-hw:swervedrive:bl:speed:pid:kf                                          0.006479966
+hw:swervedrive:bl:speed:pid:kf                                          0.006921906
 hw:swervedrive:bl:speed:pid:min                                         -1.0
 hw:swervedrive:bl:speed:pid:max                                         1.0
 hw:swervedrive:bl:speed:pid:imax                                        0.0
@@ -125,10 +125,10 @@ hw:swervedrive:br:encoder:analog:emin                                   5.0
 hw:swervedrive:br:encoder:analog:emax                                   0.0
 hw:swervedrive:br:encoder:analog:ec                                     3.494873
 hw:swervedrive:br:encoder:analog:rc                                     0.0
-hw:swervedrive:br:speed:pid:kp                                          0.002
+hw:swervedrive:br:speed:pid:kp                                          0.0
 hw:swervedrive:br:speed:pid:ki                                          0.0
 hw:swervedrive:br:speed:pid:kd                                          0.0
-hw:swervedrive:br:speed:pid:kf                                          0.006479966
+hw:swervedrive:br:speed:pid:kf                                          0.006921906
 hw:swervedrive:br:speed:pid:min                                         -1.0
 hw:swervedrive:br:speed:pid:max                                         1.0
 hw:swervedrive:br:speed:pid:imax                                        0.0
@@ -171,8 +171,8 @@ plotting:enabled                                                        true
 # this active value below is ignored if we are connected to the field.
 #
 auto:testmode:active                                                    true
-auto:testmode:which                                                     12
+auto:testmode:which                                                     14
 auto:testmode:distance                                                  1800
 auto:testmode:power                                                     0.9
-auto:testmode:duration                                                  1.75
+auto:testmode:duration                                                  5.0
 auto:testmode:name                                                      "Slalom_Path"
