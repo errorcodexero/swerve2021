@@ -150,6 +150,7 @@ swervedrive:length                                                      23
 swervedrive:linear:samples                                              2
 swervedrive:angularsamples                                              2
 swervedrive:inches_per_tick                                             0.000739
+swervedrive:maxspeed                                                    140
 
 #
 # OI
