@@ -8,6 +8,7 @@ import frc.robot.automodes.SwerveDriveRobotAutoController;
 import org.xero1425.base.XeroRobot;
 import org.xero1425.base.controllers.AutoController;
 import org.xero1425.misc.SimArgs;
+import org.xero1425.misc.XeroPathType;
 
 /**
  * The VM is configured to automatically run this class, and to call the
@@ -30,7 +31,7 @@ public class Swerve2021 extends XeroRobot {
         if (ret != null)
             return ret;
 
-        return "strrot";
+        return "testmode";
     }
 
     public AutoController createAutoController() {
@@ -48,5 +49,9 @@ public class Swerve2021 extends XeroRobot {
     protected void hardwareInit() throws Exception {
         SwerveDriveRobotSubsystem robot = new SwerveDriveRobotSubsystem(this);
         setRobotSubsystem(robot);
+    }
+
+    protected XeroPathType getPathType() {
+        return XeroPathType.SwervePathFollowing ;
     }
 }

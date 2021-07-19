@@ -8,6 +8,7 @@ import org.xero1425.base.controllers.TestAutoMode;
 import org.xero1425.base.swervedrive.SwerveAnglePowerAction;
 import org.xero1425.base.swervedrive.SwerveAngleVelocityAction;
 import org.xero1425.base.swervedrive.SwerveDriveDirectionRotateAction;
+import org.xero1425.base.swervedrive.SwerveDrivePathFollowAction;
 import org.xero1425.base.swervedrive.SwerveDriveSubsystem;
 import org.xero1425.base.swervedrive.SwerveSetMotorPowerAction;
 import org.xero1425.base.swervedrive.SwerveStopAction;
@@ -141,8 +142,12 @@ public class SwerveTestAutoMode extends TestAutoMode {
                 break;
 
             case 14:
-                addSubActionPair(swerve, new SwerveDriveDirectionRotateAction(swerve, 12, 0, 36, getDuration()), true);
+                addSubActionPair(swerve, new SwerveDriveDirectionRotateAction(swerve, getNamedDouble("x"), getNamedDouble("y"), getNamedDouble("rotate"), getDuration()), true);
                 break ;
+
+            case 15:
+                addSubActionPair(swerve, new SwerveDrivePathFollowAction(swerve, getNameParam()), true);
+                break ;                
         }
     }
 }

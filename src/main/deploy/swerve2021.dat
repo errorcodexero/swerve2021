@@ -172,8 +172,13 @@ plotting:enabled                                                        true
 # this active value below is ignored if we are connected to the field.
 #
 auto:testmode:active                                                    true
-auto:testmode:which                                                     14
+auto:testmode:which                                                     15
 auto:testmode:distance                                                  1800
 auto:testmode:power                                                     0.9
-auto:testmode:duration                                                  5.0
-auto:testmode:name                                                      "Slalom_Path"
+auto:testmode:name                                                      "Test_Straight"
+
+auto:testmode:x                                                         12.0
+auto:testmode:y                                                         0.0
+auto:testmode:rotate                                                    36.0
+
+auto:testmode:duration                                                  10.0
