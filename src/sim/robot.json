@@ -35,6 +35,9 @@
                 "navx:model" : "navx",
                 "navx:instance" : "1",
 
+                "width" : 23.0,
+                "length" : 23.0,
+
                 "flsteer:motor:index" : 2,
                 "flsteer:motor:type" : "sparkmax-brushless",
                 "flsteer:degrees_per_second_per_volt" : 284,

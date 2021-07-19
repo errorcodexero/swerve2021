@@ -27,9 +27,10 @@ pathmanager:messages                                                    false
 xerorobot:messages                                                      false
 actions:messages                                                        true
 robot:messages                                                          false
-swervedrive:messages                                                    true
+swervedrive:messages                                                    false
 swerve_module:messages                                                  false
-swervedrive_model:messages                                              false
+swervedrive_model:messages                                              true
+sweverdrive_module_model:messages                                       false
 
 #
 # Hardware
@@ -172,7 +173,7 @@ plotting:enabled                                                        true
 # this active value below is ignored if we are connected to the field.
 #
 auto:testmode:active                                                    true
-auto:testmode:which                                                     15
+auto:testmode:which                                                     14
 auto:testmode:distance                                                  1800
 auto:testmode:power                                                     0.9
 auto:testmode:name                                                      "Test_Straight"
