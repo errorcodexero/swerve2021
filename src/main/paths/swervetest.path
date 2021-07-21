@@ -89,18 +89,18 @@
                         },
                         {
                             "heading": 0,
-                            "x": 186.89290498974708,
-                            "y": 250.76866712235133
+                            "x": 151.82554344051675,
+                            "y": 246.63212723105767
                         },
                         {
                             "heading": -90,
-                            "x": 270.8322077922077,
-                            "y": 197.17665071770335
+                            "x": 227.5988054726023,
+                            "y": 196.444641989027
                         },
                         {
                             "heading": -180,
-                            "x": 176.56191387559807,
-                            "y": 135.1907040328093
+                            "x": 153.7936801166748,
+                            "y": 136.41647336620593
                         },
                         {
                             "heading": -180,
@@ -111,9 +111,40 @@
                     "startangle": 0,
                     "startangledelay": 0,
                     "startvelocity": 0
+                },
+                {
+                    "constraints": [
+                    ],
+                    "endangle": 180,
+                    "endangledelay": 0,
+                    "endvelocity": 0,
+                    "flags": [
+                    ],
+                    "markers": [
+                    ],
+                    "maxacceleration": 140,
+                    "maxcentripetal": 100000,
+                    "maxjerk": 1400,
+                    "maxvelocity": 60,
+                    "name": "StraightRotate",
+                    "points": [
+                        {
+                            "heading": 0,
+                            "x": 0,
+                            "y": 180
+                        },
+                        {
+                            "heading": 0,
+                            "x": 240,
+                            "y": 180
+                        }
+                    ],
+                    "startangle": 0,
+                    "startangledelay": 0,
+                    "startvelocity": 0
                 }
             ]
         }
     ],
-    "outdir": "D:/cygwin64/home/bwg/robottools/swerve2021/src/main/deploy/paths"
+    "outdir": "C:/cygwin64/home/bwg/robottools/swerve2021/src/main/deploy/paths"
 }
