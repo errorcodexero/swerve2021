@@ -115,7 +115,7 @@
                 {
                     "constraints": [
                     ],
-                    "endangle": 180,
+                    "endangle": 0,
                     "endangledelay": 0,
                     "endvelocity": 0,
                     "flags": [
@@ -125,8 +125,8 @@
                     "maxacceleration": 140,
                     "maxcentripetal": 100000,
                     "maxjerk": 1400,
-                    "maxvelocity": 60,
-                    "name": "StraightRotate",
+                    "maxvelocity": 140,
+                    "name": "CurveLeft",
                     "points": [
                         {
                             "heading": 0,
@@ -134,9 +134,9 @@
                             "y": 180
                         },
                         {
-                            "heading": 0,
-                            "x": 240,
-                            "y": 180
+                            "heading": 90,
+                            "x": 120,
+                            "y": 300
                         }
                     ],
                     "startangle": 0,

@@ -121,13 +121,7 @@ public class SwerveTestAutoMode extends TestAutoMode {
                 addSubActionPair(swerve, new SwerveAngleVelocityAction(swerve, angles, speeds, false), false);
 
                 addAction(new DelayAction(ctrl.getRobot(), getDuration()));
-
-                for (int i = 0; i < 4; i++) {
-                    angles[i] = 0.0;
-                    speeds[i] = 0.0;
-                }
-
-                addSubActionPair(swerve, new SwerveAngleVelocityAction(swerve, angles, speeds, false), false);
+                addSubActionPair(swerve, new SwerveStopAction(swerve), true) ;
                 break;
 
             case 12:
@@ -135,17 +129,10 @@ public class SwerveTestAutoMode extends TestAutoMode {
                 break;
 
             case 13:
-                addSubActionPair(swerve, new SwerveAnglePowerAction(swerve, 45, 0.2, 2), true);
-                addSubActionPair(swerve, new SwerveAnglePowerAction(swerve, -45, 0.2, 2), true);
-                addSubActionPair(swerve, new SwerveAnglePowerAction(swerve, 45, -0.2, 2), true);
-                addSubActionPair(swerve, new SwerveAnglePowerAction(swerve, -45, -0.2, 2), true);
-                break;
-
-            case 14:
                 addSubActionPair(swerve, new SwerveDirectionRotateAction(swerve, getNamedDouble("x"), getNamedDouble("y"), getNamedDouble("rotate"), getDuration()), true);
                 break ;
 
-            case 15:
+            case 14:
                 addSubActionPair(swerve, new SwervePathFollowAction(swerve, getNameParam()), true);
                 break ;                
         }
