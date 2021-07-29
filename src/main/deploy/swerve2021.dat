@@ -27,7 +27,7 @@ xerorobot:messages                                                      false
 actions:messages                                                        true
 robot:messages                                                          false
 swervedrive:messages                                                    false
-swerve_module:messages                                                  false
+swervemodule:messages                                                   true
 swervedrive_model:messages                                              false
 sweverdrive_module_model:messages                                       false
 
@@ -50,7 +50,7 @@ hw:swervedrive:fl:encoder:analog:rc                                     0.0
 hw:swervedrive:fl:speed:pid:kp                                          0.006
 hw:swervedrive:fl:speed:pid:ki                                          0.0
 hw:swervedrive:fl:speed:pid:kd                                          0.0
-hw:swervedrive:fl:speed:pid:kf                                          0.0063736910448        ##0.006921906
+hw:swervedrive:fl:speed:pid:kf                                          0.0063736910448
 hw:swervedrive:fl:speed:pid:min                                         -1.0
 hw:swervedrive:fl:speed:pid:max                                         1.0
 hw:swervedrive:fl:speed:pid:imax                                        0.0
@@ -76,7 +76,7 @@ hw:swervedrive:fr:encoder:analog:rc                                     0.0
 hw:swervedrive:fr:speed:pid:kp                                          0.006
 hw:swervedrive:fr:speed:pid:ki                                          0.0
 hw:swervedrive:fr:speed:pid:kd                                          0.0
-hw:swervedrive:fr:speed:pid:kf                                          0.0063515409456            ##0.006921906
+hw:swervedrive:fr:speed:pid:kf                                          0.0063515409456
 hw:swervedrive:fr:speed:pid:min                                         -1.0
 hw:swervedrive:fr:speed:pid:max                                         1.0
 hw:swervedrive:fr:speed:pid:imax                                        0.0
@@ -102,7 +102,7 @@ hw:swervedrive:bl:encoder:analog:rc                                     0.0
 hw:swervedrive:bl:speed:pid:kp                                          0.006
 hw:swervedrive:bl:speed:pid:ki                                          0.0
 hw:swervedrive:bl:speed:pid:kd                                          0.0
-hw:swervedrive:bl:speed:pid:kf                                          0.006302395413            ##0.006921906
+hw:swervedrive:bl:speed:pid:kf                                          0.006302395413
 hw:swervedrive:bl:speed:pid:min                                         -1.0
 hw:swervedrive:bl:speed:pid:max                                         1.0
 hw:swervedrive:bl:speed:pid:imax                                        0.0
@@ -128,7 +128,7 @@ hw:swervedrive:br:encoder:analog:rc                                     0.0
 hw:swervedrive:br:speed:pid:kp                                          0.006
 hw:swervedrive:br:speed:pid:ki                                          0.0
 hw:swervedrive:br:speed:pid:kd                                          0.0
-hw:swervedrive:br:speed:pid:kf                                          0.006292012554     ##0.006921906
+hw:swervedrive:br:speed:pid:kf                                          0.006292012554
 hw:swervedrive:br:speed:pid:min                                         -1.0
 hw:swervedrive:br:speed:pid:max                                         1.0
 hw:swervedrive:br:speed:pid:imax                                        0.0
@@ -160,7 +160,7 @@ driver:position:maximum                                                 154
 driver:position:x:deadband                                              0.1
 driver:position:y:deadband                                              0.1
 driver:rotate:deadband                                                  0.1
-driver:axis:power                                                       2.0
+driver:axis:power                                                       1.5
 
 #
 # Misc stuff
@@ -172,7 +172,7 @@ plotting:enabled                                                        true
 # this active value below is ignored if we are connected to the field.
 #
 auto:testmode:active                                                    true
-auto:testmode:which                                                     14
+auto:testmode:which                                                     10
 auto:testmode:distance                                                  80
 auto:testmode:power                                                     60
 auto:testmode:name                                                      "Test_ThereBack"
@@ -181,4 +181,4 @@ auto:testmode:x                                                         12.0
 auto:testmode:y                                                         0.0
 auto:testmode:rotate                                                    36.0
 
-auto:testmode:duration                                                  5
+auto:testmode:duration                                                  4
