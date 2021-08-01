@@ -80,7 +80,7 @@
                 "blsteer:rmin" : -180.0,
                 "blsteer:emax" : 0.0,
                 "blsteer:emin" : 5.0,
-                "blsteer:ec" :  0.969238,
+                "blsteer:ec" :  2.767333701,
                 "blsteer:rc" : 0,
                 "bldrive:motor:index" : 5,
                 "bldrive:motor:type" : "talonfx",

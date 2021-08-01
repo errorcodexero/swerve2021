@@ -12,7 +12,7 @@
                     {
                         "comment" : "automode must be set to the correct testmode in droid param file",
                         "start" : 1.0,
-                        "autonomous" : 30.0,
+                        "autonomous" : 10.0,
                         "between" : 0.0,
                         "teleop" : 0.0,
                         "fms" : false
@@ -24,7 +24,7 @@
                     "values" : 
                     {
                         "xpos" : 0.0,
-                        "ypos" : 0.0,
+                        "ypos" : 180.0,
                         "angle" : 0.0
                     }
                 }           
