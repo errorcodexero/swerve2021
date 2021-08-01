@@ -27,9 +27,10 @@ xerorobot:messages                                                      false
 actions:messages                                                        true
 robot:messages                                                          false
 swervedrive:messages                                                    false
-swervemodule:messages                                                   true
+swervemodule:messages                                                   false
 swervedrive_model:messages                                              false
 sweverdrive_module_model:messages                                       false
+swerveoi:messages                                                       true
 
 #
 # Hardware
