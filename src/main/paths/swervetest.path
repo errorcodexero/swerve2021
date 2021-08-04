@@ -76,10 +76,10 @@
                     ],
                     "markers": [
                     ],
-                    "maxacceleration": 140,
+                    "maxacceleration": 60,
                     "maxcentripetal": 10000,
                     "maxjerk": 1400,
-                    "maxvelocity": 140,
+                    "maxvelocity": 60,
                     "name": "ThereBack",
                     "points": [
                         {

@@ -35,6 +35,8 @@ swerveoi:messages                                                       true
 #
 # Hardware
 #
+## Calibration of analog:ec is done with bevel side of the wheels towards the "right" side of the robot ##
+
 hw:gyro                                                                 "navx"
 
 hw:swervedrive:fl:steer:canid                                           2
@@ -46,7 +48,7 @@ hw:swervedrive:fl:encoder:analog:rmin                                   -180.0
 hw:swervedrive:fl:encoder:analog:rmax                                   180.0
 hw:swervedrive:fl:encoder:analog:emin                                   5.0
 hw:swervedrive:fl:encoder:analog:emax                                   0.0
-hw:swervedrive:fl:encoder:analog:ec                                     4.620361
+hw:swervedrive:fl:encoder:analog:ec                                     2.29980  #4.62    
 hw:swervedrive:fl:encoder:analog:rc                                     0.0
 hw:swervedrive:fl:speed:pid:kp                                          0.006
 hw:swervedrive:fl:speed:pid:ki                                          0.0
@@ -72,7 +74,7 @@ hw:swervedrive:fr:encoder:analog:rmin                                   -180.0
 hw:swervedrive:fr:encoder:analog:rmax                                   180.0
 hw:swervedrive:fr:encoder:analog:emin                                   5.0
 hw:swervedrive:fr:encoder:analog:emax                                   0.0
-hw:swervedrive:fr:encoder:analog:ec                                     4.150390
+hw:swervedrive:fr:encoder:analog:ec                                     0.819092 #4.150390 #
 hw:swervedrive:fr:encoder:analog:rc                                     0.0
 hw:swervedrive:fr:speed:pid:kp                                          0.006
 hw:swervedrive:fr:speed:pid:ki                                          0.0
@@ -98,7 +100,7 @@ hw:swervedrive:bl:encoder:analog:rmin                                   -180.0
 hw:swervedrive:bl:encoder:analog:rmax                                   180.0
 hw:swervedrive:bl:encoder:analog:emin                                   5.0
 hw:swervedrive:bl:encoder:analog:emax                                   0.0
-hw:swervedrive:bl:encoder:analog:ec                                     2.767333701
+hw:swervedrive:bl:encoder:analog:ec                                     3.29711  #2.767333701
 hw:swervedrive:bl:encoder:analog:rc                                     0.0
 hw:swervedrive:bl:speed:pid:kp                                          0.006
 hw:swervedrive:bl:speed:pid:ki                                          0.0
@@ -124,7 +126,7 @@ hw:swervedrive:br:encoder:analog:rmin                                   -180.0
 hw:swervedrive:br:encoder:analog:rmax                                   180.0
 hw:swervedrive:br:encoder:analog:emin                                   5.0
 hw:swervedrive:br:encoder:analog:emax                                   0.0
-hw:swervedrive:br:encoder:analog:ec                                     3.494873
+hw:swervedrive:br:encoder:analog:ec                                     0.4870605   #3.494873
 hw:swervedrive:br:encoder:analog:rc                                     0.0
 hw:swervedrive:br:speed:pid:kp                                          0.006
 hw:swervedrive:br:speed:pid:ki                                          0.0
@@ -182,4 +184,4 @@ auto:testmode:x                                                         12.0
 auto:testmode:y                                                         0.0
 auto:testmode:rotate                                                    36.0
 
-auto:testmode:duration                                                  4
+auto:testmode:duration                                                  3
