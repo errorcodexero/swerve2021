@@ -178,7 +178,7 @@ auto:testmode:active                                                    true
 auto:testmode:which                                                     15
 auto:testmode:distance                                                  80
 auto:testmode:power                                                     60
-auto:testmode:name                                                      "Test_CurveRight"
+auto:testmode:name                                                      "Test_ThereBack"
 
 auto:testmode:x                                                         12.0
 auto:testmode:y                                                         0.0
