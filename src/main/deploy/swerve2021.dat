@@ -154,6 +154,7 @@ swervedrive:linear:samples                                              2
 swervedrive:angularsamples                                              2
 swervedrive:inches_per_tick                                             0.000739
 swervedrive:maxspeed                                                    140
+swervedrive:lookahead                                                   24.0
 
 #
 # OI
@@ -175,10 +176,10 @@ plotting:enabled                                                        true
 # this active value below is ignored if we are connected to the field.
 #
 auto:testmode:active                                                    true
-auto:testmode:which                                                     15
+auto:testmode:which                                                     17
 auto:testmode:distance                                                  80
 auto:testmode:power                                                     60
-auto:testmode:name                                                      "Test_ThereBack"
+auto:testmode:name                                                      "Test_Straight"
 
 auto:testmode:x                                                         12.0
 auto:testmode:y                                                         0.0
